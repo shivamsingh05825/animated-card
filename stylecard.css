@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+
+}
+
+.card {
+    width: 30rem;
+    height: auto;
+    background-color: rgba(243, 247, 247, 0.34);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2),
+                0 6px 6px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    perspective: 1000px;
+}
+
+.card:hover {
+    transform: rotateY(5deg) rotateX(5deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3),
+                0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.name {
+    h1,h3{
+    text-align: center;
+
+    }
+}
+
+.bio{
+    p{
+        text-align: center;
+    }
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.icons{
+    text-align: center;
+    margin-top: 20px;
+
+    i{
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border-radius: 50px;
+    }
+}
+.top img{
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid white;
+}
+
